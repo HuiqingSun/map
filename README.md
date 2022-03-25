@@ -58,6 +58,7 @@ marker_cluster = folium.plugins.MarkerCluster().add_to(Chapel_Hill_Map)
 
 for point in range(0, len(locationlist)):
     folium.Marker(locationlist[point], popup='ID:'+str(chapel_hill['id'][point]), icon=folium.Icon(color=chapel_hill["color"][point], icon_color='white', icon='biohazard', angle=0, prefix='fa')).add_to(marker_cluster)
+    
 Chapel_Hill_Map
 
 ```
@@ -81,6 +82,7 @@ sewer["color"] = sewer.apply(cate, axis=1)
 ```
 for point in range(0, len(locatel)):
     folium.Marker(locatel[point], popup='sites:'+str(sewer['sites'][point]), icon=folium.Icon(color=sewer["color"][point], icon_color='white', icon='biohazard', angle=0, prefix='fa')).add_to(marker_cluster)
+    
 Chapel_Hill_Map
 
 ```
