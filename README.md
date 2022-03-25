@@ -10,15 +10,15 @@ from folium.plugins import MarkerCluster\
 def folium_deepnote_show(m):\
     data = m.get_root().render()\
     data_fixed_height = data.replace('width: 100%;height: 100%', 'width: 100%').replace('height: 100.0%;', 'height: 609px;', 1)\
-    display(HTML(data_fixed_height))\
+    display(HTML(data_fixed_height))
 
 
 chapel_hill=pd.read_csv('/Users/sunhuiqing/Desktop/ChapelHillEVData.csv', delimiter=',')
 
 
-def categorycolors(chapel_hill):\
-    if chapel_hill['Category'] == 'Smells':\
-        return 'green'\
+def categorycolors(chapel_hill):
+    if chapel_hill['Category'] == 'Smells':
+        return 'green'
         
     elif chapel_hill['Category'] == 'WTP':\
         return 'blue'\
