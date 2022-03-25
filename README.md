@@ -69,7 +69,7 @@ Chapel_Hill_Map
 ```
 
 
-Then we think sewer sites of the [priority fix information](https://www.ajc.com/neighborhoods/dekalb/map-the-dekalb-sewer-systems-103-priority-fixes/JBAEM2ABZRAJ3IKQREFKM737S4/)would be helpful, so from this website, we filtered out a few sites near chapel hill park (within twenty or thirty minutes by car), and put thoes sites' name as well as their coordinates into a file which is the [sewer.csv](https://github.com/HuiqingSun/EJProject/blob/main/sewer.csv), and set black as the sewer sites color on the map, then repeat similar code steps above, we added sewer sites to the previous base map.
+Then we think sewer sites of the [priority fix information](https://www.ajc.com/neighborhoods/dekalb/map-the-dekalb-sewer-systems-103-priority-fixes/JBAEM2ABZRAJ3IKQREFKM737S4/) would be helpful, so from this website, we filtered out a few sites near chapel hill park (within twenty or thirty minutes by car), and put thoes sites' name as well as their coordinates into a file which is the [sewer.csv](https://github.com/HuiqingSun/EJProject/blob/main/sewer.csv), and set black as the sewer sites color on the map, then repeat similar code steps above, we added sewer sites to the previous base map.
 
 sewer sites' status information in this [sewer.csv](https://github.com/HuiqingSun/EJProject/blob/main/sewer.csv) are from [Page19-25](https://www.dekalbcountyga.gov/sites/default/files/users/user3551/DeKalb%20County%20Annual%20Report%20No%2010%203.1.22.pdf).
 
