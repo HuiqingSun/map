@@ -41,8 +41,10 @@ def categorycolors(chapel_hill):
         return 'darkblue'
  ```      
         
-·chapel_hill["color"] = chapel_hill.apply(categorycolors, axis=1)
-[ChapelHillEVData.csv file](https://github.com/HuiqingSun/EJProject/blob/main/ChapelHillEVData.csv) contains names and categories of addresses, as well as the coordinates, and the above codes set different colors to represent different categories: # greens are Smells#, #blues are WTPs, reds are Superfunds, purples are Vultures, yellows are Parks.
+        
+chapel_hill["color"] = chapel_hill.apply(categorycolors, axis=1)
+[ChapelHillEVData.csv file](https://github.com/HuiqingSun/EJProject/blob/main/ChapelHillEVData.csv) contains names and categories of addresses, as well as the coordinates, and the above codes set different colors to represent different categories: **greens are Smells**, **blues are WTPs**, **reds are Superfunds**, **purples are Vultures**, **yellows are Parks**.
+
 
 
 ```
@@ -93,4 +95,7 @@ Chapel_Hill_Map
 
 ```
 
-·To see the folium map results, please click this [link](http://nbviewer.org/github/HuiqingSun/map/blob/main/Chapel%20Hill%20Demo%20Map%20%284%29%20%282%29.ipynb).
+
+To see the folium map results, please click this [link](http://nbviewer.org/github/HuiqingSun/map/blob/main/Chapel%20Hill%20Demo%20Map%20%284%29%20%282%29.ipynb).
+
+**blacks are sewer sites**
