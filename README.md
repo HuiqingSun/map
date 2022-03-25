@@ -1,4 +1,17 @@
 # Chapel Hill Demo Map
+
+import pandas as pd <br />
+
+import requests
+
+import numpy as np
+
+import folium
+
+import folium.plugins
+
+from folium.plugins import MarkerCluster
+
 [ChapelHillEVData.csv file](https://github.com/HuiqingSun/EJProject/blob/main/ChapelHillEVData.csv) contains names and categories of addresses, as well as the coordinates, and the above codes set different colors to represent different categories: greens are Smells, blues are WTPs, reds are Superfunds, purples are Vultures, yellows are Parks.
 
 The following codes creat an interactive map which contains important addresses (from [ChapelHillEVData.csv file](https://github.com/HuiqingSun/EJProject/blob/main/ChapelHillEVData.csv)) around chapelhill park.
