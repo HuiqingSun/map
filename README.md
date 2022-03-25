@@ -1,17 +1,50 @@
 # Chapel Hill Demo Map
 
 import pandas as pd\
-import requests
+import requests\
+import numpy as np\
+import folium\
+import folium.plugins\
+from folium.plugins import MarkerCluster\
 
-import numpy as np
+def folium_deepnote_show(m):\
+    data = m.get_root().render()\
+    data_fixed_height = data.replace('width: 100%;height: 100%', 'width: 100%').replace('height: 100.0%;', 'height: 609px;', 1)\
+    display(HTML(data_fixed_height))\
 
-import folium
 
-import folium.plugins
+chapel_hill=pd.read_csv('/Users/sunhuiqing/Desktop/ChapelHillEVData.csv', delimiter=',')
 
-from folium.plugins import MarkerCluster
 
+def categorycolors(chapel_hill):\
+    if chapel_hill['Category'] == 'Smells':\
+        return 'green'\
+        
+    elif chapel_hill['Category'] == 'WTP':\
+        return 'blue'\
+        
+    elif chapel_hill['Category']== 'Superfund':\
+        return 'red'\
+        
+    elif chapel_hill['Category'] == 'Vultures':\
+        return 'purple'\
+        
+    elif chapel_hill['Category']== 'Park':\
+        return 'yellow'\
+        
+    else:\
+        return 'darkblue'
+       
+        
+chapel_hill["color"] = chapel_hill.apply(categorycolors, axis=1)
 [ChapelHillEVData.csv file](https://github.com/HuiqingSun/EJProject/blob/main/ChapelHillEVData.csv) contains names and categories of addresses, as well as the coordinates, and the above codes set different colors to represent different categories: greens are Smells, blues are WTPs, reds are Superfunds, purples are Vultures, yellows are Parks.
+
+
+
+locations = chapel_hill[['Latititude', 'Longitutude']]\
+locationlist = locations.values.tolist()\
+
+
 
 The following codes creat an interactive map which contains important addresses (from [ChapelHillEVData.csv file](https://github.com/HuiqingSun/EJProject/blob/main/ChapelHillEVData.csv)) around chapelhill park.
 
