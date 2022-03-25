@@ -87,3 +87,4 @@ Chapel_Hill_Map
 
 ```
 
+To see the folium map results, please click this [link](http://nbviewer.org/github/HuiqingSun/map/blob/main/Chapel%20Hill%20Demo%20Map%20%284%29%20%282%29.ipynb).
