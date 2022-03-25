@@ -1,12 +1,12 @@
 # Chapel Hill Demo Map
-
+```
 import pandas as pd\
 import requests\
 import numpy as np\
 import folium\
 import folium.plugins\
 from folium.plugins import MarkerCluster
-
+```
 def folium_deepnote_show(m):\
     data = m.get_root().render()\
     data_fixed_height = data.replace('width: 100%;height: 100%', 'width: 100%').replace('height: 100.0%;', 'height: 609px;', 1)\
