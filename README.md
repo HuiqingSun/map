@@ -1,7 +1,6 @@
 # Chapel Hill Demo Map
 
-import pandas as pd <br />
-
+import pandas as pd\
 import requests
 
 import numpy as np
