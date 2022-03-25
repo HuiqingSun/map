@@ -5,7 +5,7 @@ import requests\
 import numpy as np\
 import folium\
 import folium.plugins\
-from folium.plugins import MarkerCluster\
+from folium.plugins import MarkerCluster
 
 def folium_deepnote_show(m):\
     data = m.get_root().render()\
@@ -16,23 +16,23 @@ def folium_deepnote_show(m):\
 chapel_hill=pd.read_csv('/Users/sunhuiqing/Desktop/ChapelHillEVData.csv', delimiter=',')
 
 
-def categorycolors(chapel_hill):
+def categorycolors(chapel_hill):\
     if chapel_hill['Category'] == 'Smells':
         return 'green'
         
-    elif chapel_hill['Category'] == 'WTP':\
-        return 'blue'\
+    elif chapel_hill['Category'] == 'WTP':
+        return 'blue'
         
-    elif chapel_hill['Category']== 'Superfund':\
-        return 'red'\
+    elif chapel_hill['Category']== 'Superfund':
+        return 'red'
         
-    elif chapel_hill['Category'] == 'Vultures':\
-        return 'purple'\
+    elif chapel_hill['Category'] == 'Vultures':
+        return 'purple'
         
-    elif chapel_hill['Category']== 'Park':\
-        return 'yellow'\
+    elif chapel_hill['Category']== 'Park':
+        return 'yellow'
         
-    else:\
+    else:
         return 'darkblue'
        
         
