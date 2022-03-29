@@ -97,8 +97,12 @@ for point in range(0, len(locatel)):
 Chapel_Hill_Map
 
 ```
-
-
-To see the folium map results, please click this [link](http://nbviewer.org/github/HuiqingSun/map/blob/main/Chapel%20Hill%20Demo%20Map%20%284%29%20%282%29.ipynb).
-
 **blacks are sewer sites**
+
+To see the folium map results, please click this [link](http://nbviewer.org/github/HuiqingSun/map/blob/main/Chapel%20Hill%20Demo%20Map%20%284%29%20%282%29.ipynb). We created this final visualization using this helpful [link](http://nbviewer.org/) It can help people who have not downloaded python on their computer to visually see the python notebook files that have been uploaded to github. 
+
+
+
+
+
+This  is so helpful. 
